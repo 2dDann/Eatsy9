@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/helpcenternavimageView"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            app:srcCompat="@drawable/help_center_nav" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Help Center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchResultsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/help_deliveries_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help_deliveries" />
+
+        <ImageView
+            android:id="@+id/help_account_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help_account" />
+
+        <ImageView
+            android:id="@+id/help_ingredients_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help_ingredients" />
+        <ImageView
+            android:id="@+id/help_payments_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help_payments"/>
+        <ImageView
+            android:id="@+id/help_about_eatsy_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help_about_eatsy"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

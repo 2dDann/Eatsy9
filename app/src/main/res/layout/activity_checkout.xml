@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+
+    <TextView
+        android:id="@+id/changepaymentmethodtextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardimageView"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toEndOf="@+id/cardimageView"
+        android:text="@string/change"
+        android:textColor="#F6BC1C"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cardimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="108dp"
+        app:srcCompat="@drawable/card_icon" />
+
+    <TextView
+        android:id="@+id/changepaymentmethodtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressimageView"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toEndOf="@+id/cardimageView"
+        android:text="@string/change"
+        android:textColor="#F6BC1C"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/addpaymentmethodtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changepaymentmethodtextView1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/add_a_payment_method"
+        android:textColor="#F6BC1C"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/revieworderView"
+        android:layout_width="411dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        app:srcCompat="@drawable/review_order" />
+
+    <ImageView
+        android:id="@+id/addressimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/delivery_address_icon"
+        android:layout_below="@id/addpaymentmethodtextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="23dp"
+
+        />
+
+    <TextView
+        android:id="@+id/adddeliveryaddresstextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a delivery address"
+        android:layout_below="@id/changepaymentmethodtextView2"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#F6BC1C"
+        />
+
+
+    <ImageView
+        android:id="@+id/dateimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/delivery_date_icon"
+        android:layout_below="@id/adddeliveryaddresstextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="23dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deliveryDateTextView"
+        android:text="Choose a delivery date"
+        android:layout_below="@id/dateimageView"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#F6BC1C"
+
+        />
+
+    <Button
+        android:id="@+id/placeorderbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deliveryDateTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Place Order" />
+
+
+</RelativeLayout>

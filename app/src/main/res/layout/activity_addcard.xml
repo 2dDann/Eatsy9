@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddcardActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:srcCompat="@drawable/add_card" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/card_number_icon" />
+
+    <!-- Your layout file -->
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:background="@drawable/rounded_rectangle"
+        android:maxLength="19"
+        /> <!-- Set the background here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/editTextExpiryDate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Expiry Date (MM/YY)"
+            android:inputType="number"
+            android:maxLines="1"
+            android:background="@drawable/rounded_rectangle"
+            android:maxLength="5"
+            />
+
+        <EditText
+            android:id="@+id/editTextCVV"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_rectangle"
+            android:maxLength="3"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardinformation"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/card_info_secured" />
+
+    <TextView
+       android:id="@+id/securitytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_ensure_its_validity_a_temporary_charge_may_be_applied_to_your_card_which_will_be_automatically_refunded_by_adding_a_card_you_confirm_that_you_have_reviewed_and_accepted_our_terms_and_conditions"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        />
+
+    <!-- Button to Add Card -->
+    <Button
+        android:id="@+id/addnumberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Card"
+        android:layout_gravity="center"
+    />
+
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Eatsy9</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="change">CHANGE</string>
+    <string name="add_a_payment_method">Add a payment method</string>
+    <string name="to_ensure_its_validity_a_temporary_charge_may_be_applied_to_your_card_which_will_be_automatically_refunded_by_adding_a_card_you_confirm_that_you_have_reviewed_and_accepted_our_terms_and_conditions">To ensure its validity, a temporary charge may be applied to your card, which will be automatically refunded. By adding a card, you confirm that you have reviewed and accepted our terms and conditions.</string>
+
+
+    <string-array name="state_options">
+        <item>NY</item>
+        <item>CA</item>
+        <item>IL</item>
+        <!-- Add more states as needed -->
+    </string-array>
+
+
+</resources>

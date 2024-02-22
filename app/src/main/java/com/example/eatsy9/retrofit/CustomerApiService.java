@@ -23,29 +23,29 @@ public interface CustomerApiService {
     Call<List<Customer>> findAllCustomers();
 
     @GET("/api/customers/getCustomerById/{id}")
-    Call<Customer> findCustomerById(@Path("id") int cusid);
+    Call<Customer> getCustomerById(@Path("id") int cusid);
 
     @GET("/api/customers/getCustomerByCustomerNo/{customerNo}")
-    Call<Optional<Customer>> findCustomerByCustomerNo(@Path("customerNo") String customerNo);
+    Call<Optional<Customer>> getCustomerByCustomerNo(@Path("customerNo") String customerNo);
 
     @POST("/api/customers/addCustomer")
-    Call<Customer> findCustomerByCustomerNo(@Body Customer customer); //double check
+    Call<Customer> addCustomer(@Body Customer customer); //double check
 
     @PUT("/api/customers/updateCustomer")
     Call<Customer> updateCustomer(@Body Customer customer);
 
     @DELETE("/api/customers/deleteCustomerById/{id}")
-    Call<Void> deleteCustomer(@Path("id") int id);
+    Call<Void> deleteCustomerById(@Path("id") int id);
 
     @DELETE("/api/customers/removeCustomerByNo/{customerNo}")
-    Call<Optional<String>> removeCustomer(@Path("customerNo") String customerNo);
+    Call<Optional<String>> removeCustomerByNo(@Path("customerNo") String customerNo);
 
     @GET("/api/customers/getAllContactsByCustomer/{customerno}")
-    Call<Set<Contact>> findAllContactsByCustomer(@Path("customerno") String customerno);
+    Call<Set<Contact>> getAllContactsByCustomer(@Path("customerno") String customerno);
 
     @GET("/api/customers/getAllOrdersByCustomer/{customerno}")
-    Call<Set<Order>> findAllOrdersByCustomer(@Path("customerno") String customerno);
+    Call<Set<Order>> getAllOrdersByCustomer(@Path("customerno") String customerno);
 
     @GET("/api/customers/getAllPaymentssByCustomer/{customerno}")
-    Call<Set<Payment>> findAllPaymentsByCustomer(@Path("customerno") String customerno);
+    Call<Set<Payment>> getAllPaymentsByCustomer(@Path("customerno") String customerno);
 }

@@ -2,6 +2,7 @@ package com.example.eatsy9.retrofit;
 
 import com.example.eatsy9.dto.LoginDto;
 import com.example.eatsy9.dto.LoginRegistrationWrapper;
+import com.example.eatsy9.model.Login;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -13,5 +14,5 @@ public interface LoginApiService {
     Call<String> saveCustomerLogin(@Body LoginRegistrationWrapper reg); //reg?
 
     @POST("/api/login/login")
-    Call<Login> customerLogin(@Body LoginDto loginInfo); //loginInfo? & Login?
+    Call<Login> customerLogin(@Body LoginDto loginInfo); //loginInfo?
 }

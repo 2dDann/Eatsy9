@@ -1,5 +1,6 @@
 package com.example.eatsy9.retrofit;
 
+import com.example.eatsy9.dto.QuestionnaireDto;
 import com.example.eatsy9.model.Questionnaire;
 
 import retrofit2.Call;
